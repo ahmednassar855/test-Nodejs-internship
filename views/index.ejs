@@ -1,0 +1,102 @@
+<%- include('./shared/header.ejs')%>
+
+  <body>
+
+
+    <%- include('./shared/navbar.ejs')%>
+
+      <section class="text-center pt-4">
+        <div class="container-fluid secondContainer">
+          <div class="">
+            <span>0.44 %</span>
+            <span>5 Mins</span>
+          </div>
+          <div class="">
+            <span>0.99 %</span>
+            <span>5 Mins</span>
+          </div>
+          <div class="">
+            <span>₹ 24,37,522</span>
+            <span>5 Mins</span>
+          </div>
+          <div class="">
+            <span>6.12 %</span>
+            <span>5 Mins</span>
+          </div>
+          <div class="">
+            <span>13.5 %</span>
+            <span>5 Mins</span>
+          </div>
+
+        </div>
+
+        <p class="secondContainer_parag pt-4">Average BTC/INR net price including commission</p>
+      </section>
+
+      <section class="container-fluid">
+        <div class="table_header">
+          <div class="">
+            <p>#</p>
+          </div>
+          <div class="">
+            <p>Platform</p>
+          </div>
+          <div class="">
+            <p>Last Traded Price</p>
+          </div>
+          <div class="">
+            <p> Buy / Sell Price</p>
+          </div>
+          <div class="">
+            <p>Volume</p>
+          </div>
+          <div>
+            <p>Base unit</p>
+          </div>
+        </div>
+
+
+        <% for( let index=0; index < data.length; index++ ) { %>
+
+          <div class="table_body">
+            <div class="">
+              <p>#</p>
+            </div>
+            <div class="">
+              <p>
+                <%= data[index].element %>
+              </p>
+            </div>
+            <div class="">
+              <p>
+                <%= data[index].last %>
+              </p>
+            </div>
+            <div class="">
+              <p class="text-white">
+                <%= data[index].buy %> / <%= data[index].sell %>
+              </p>
+            </div>
+            <div class="">
+              <p>
+                <%= data[index].volume %>
+              </p>
+            </div>
+            <div>
+              <p>
+                <%= data[index].base_unit %>
+              </p>
+            </div>
+
+          </div>
+
+
+          <% } %>
+
+      </section>
+
+
+
+      <%- include('./shared/firstFooter.ejs')%>
+
+        <%- include('./shared/footer.ejs')%>
