@@ -1,50 +1,46 @@
 <header>
-    <nav class="navbar navbar-expand-lg  bg-transparent" data-bs-theme="dark">
-      <div class="container-fluid d-flex  justify-content-between">
-        <a class="navbar-brand" href="#">
-          <img src="/images/HODLINFO.png" alt="" class="w-25">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <div class="continer nav_bar row align-items-center pt-3">
+    <div class="left-side col-12 col-lg-3">
+      <a class="" href="#">
+        <img src="/images/HODLINFO.png" alt="" class="w-100">
+      </a>
+    </div>
+
+    <div class="middle col-12 col-lg-6 align-items-center justify-content-center">
+      <div class="dropdown px-4" >
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          INR
         </button>
-
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                INR
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">INR</a></li>
-              </ul>
-            </li>
-
-          </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                BTC
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">INR</a></li>
+        </ul>
       </div>
-    </nav>
-  </header>
+      <div class="dropdown px-4">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          BTC
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">BTC</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-secondary">Buy BTC</button>
+    </div>
+
+    <div class="right-side d-flex col-12 align-items-center justify-content-center col-lg-3">
+      <div>
+        <button type="button" class="btn btn-secondary mx-3">Connect Telegram</button>
+        <label class="label">
+          <div class="toggle">
+            <input class="toggle-state" type="checkbox" name="check" value="check" />
+            <div class="indicator"></div>
+          </div>
+        </label>
+      </div>
+
+
+    </div>
+  </div>
+
+</header>
